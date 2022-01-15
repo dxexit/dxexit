@@ -1,0 +1,14 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+    "err": {
+      "name": "pnpm",
+      "message": "No package.json (or package.yaml, or package.json5) was found in \"/Users/alial-hasnawi/Documents/GitHub/dxexit\".",
+      "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+      "stack": "pnpm: No package.json (or package.yaml, or package.json5) was found in \"/Users/alial-hasnawi/Documents/GitHub/dxexit\".\n    at readProjectManifest (/Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:19790:13)\n    at async Object.readProjectManifestOnly (/Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:19794:28)\n    at async readProjectManifestOnly (/Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:43556:24)\n    at async Object.handler (/Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:179442:24)\n    at async /Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:183657:21\n    at async run (/Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:183631:34)\n    at async runPnpm (/Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:183843:5)\n    at async /Users/alial-hasnawi/pnpm-global/5/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:183835:7"
+    }
+  }
+}
