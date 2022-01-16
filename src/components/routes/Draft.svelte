@@ -45,6 +45,9 @@
             <button class="draft-submit" type="submit" disabled={!text.trim()}
                 >Post</button
             >
+            <div class="preview markdown-body">
+                {@html markdown_to_html(text)}
+            </div>
         </form>
     </div>
 </div>
@@ -127,7 +130,7 @@
         overflow-wrap: anywhere;
     }
 
-    textarea {
+    textarea, .preview {
         width: 100%;
         height: 300px;
         box-sizing: border-box;
@@ -141,6 +144,11 @@
 
         font-size: 14px;
         font-family: inherit;
+    }
+
+    .preview {
+        min-height: 200px;
+        overflow: auto;
     }
 
     textarea:active,
