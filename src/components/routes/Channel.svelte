@@ -1,12 +1,10 @@
 <script>
-    import GUN from "gun";
     import { onMount } from "svelte";
     import { channel } from "../../channel";
-    import { username } from "../../user";
     import Draft from "./Draft.svelte";
     import { draft_open } from "./draft_store";
+    import { db } from "../../user";
     import ChatMessage from "./Post.svelte";
-    const db = GUN();
 
     let messages = [];
 

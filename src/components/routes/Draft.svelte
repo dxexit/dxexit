@@ -1,10 +1,8 @@
 <script>
-    import GUN from "gun";
     import { channel } from "../../channel";
     import { markdown_to_html } from "../../convert";
-    import { user } from "../../user";
+    import { db, user } from "../../user";
     import { draft_open } from "./draft_store";
-    const db = GUN();
 
     let text = "";
 

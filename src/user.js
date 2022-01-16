@@ -4,7 +4,7 @@ import 'gun/axe';
 import { writable } from 'svelte/store';
 
 // Database
-export const db = GUN();
+export const db = GUN(['http://localhost:8765/gun', 'https://gun-manhattan.herokuapp.com/gun']);
 
 // Gun User
 export const user = db.user().recall({sessionStorage: true});
