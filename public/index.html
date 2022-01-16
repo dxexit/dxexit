@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>DXEXIT</title>
+
+	<link rel='icon' type='image/png' href='./favicon.png'>
+	<link rel='stylesheet' href='./markdown.css'>
+	<link rel='stylesheet' href='./build/bundle.css'>
+
+	<script defer src='./build/bundle.js'></script>
+
+	<style>
+		:root {
+			--color-1: rgb(87, 87, 87);
+			--color-2: rgb(124, 124, 124);
+			--color-3: rgb(173, 173, 173);
+			--color-4: rgb(233, 233, 233);
+			--color-5: rgb(238, 238, 238);
+			--color-6: rgb(247, 247, 247);
+			--color-accent: blue;
+		}
+
+		html,
+		body {
+			width: 100vw;
+			height: 100vh;
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+
+		body {
+			display: grid;
+			grid-template-columns: 100vw;
+			grid-template-rows: 56px calc(100% - 56px);
+			background-color: var(--color-6);
+
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			color: var(--color-1);
+		}
+
+		.hidden {
+			display: none !important;
+			opacity: 0;
+		}
+
+		.fade-in {
+			opacity: 1;
+			animation-name: fade-in-anim;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+			animation-duration: 200ms;
+		}
+
+		@keyframes fade-in-anim {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+
+<body>
+</body>
+
+</html>
