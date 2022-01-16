@@ -9,7 +9,7 @@
 </script>
 
 <header>
-  <a href="./"><h1>forus</h1></a>
+  <a href="./"><img src="./favicon.png" alt="forus" class="icon"></a>
 
   {#if get_and_load_channel()}
     <span class="channel">/{channel}</span>
@@ -30,10 +30,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
-    padding: 2%;
+    padding: 16px;
 
     background-color: var(--color-4);
+  }
+
+  .icon {
+    width: 4em;
   }
 
   .channel {
