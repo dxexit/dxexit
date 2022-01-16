@@ -124,6 +124,7 @@
     .draft-title {
         font-size: 24px;
         align-self: flex-start;
+        overflow-wrap: anywhere;
     }
 
     textarea {

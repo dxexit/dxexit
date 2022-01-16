@@ -12,7 +12,7 @@
   <a href="./"><h1>DXEXIT</h1></a>
 
   {#if get_and_load_channel()}
-    <span>/{channel}</span>
+    <span class="channel">/{channel}</span>
   {/if}
 
   {#if $username}
@@ -34,6 +34,10 @@
     padding: 2%;
 
     background-color: var(--color-4);
+  }
+
+  .channel {
+    font-size: smaller;
   }
 
   h1 {
