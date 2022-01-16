@@ -12,4 +12,4 @@ const converter = new Converter(
     }
 );
 
-export const markdown_to_html = markdown => DOMPurify.sanitize(converter.makeHtml(markdown));
+export const markdown_to_html = markdown => DOMPurify.sanitize(converter.makeHtml(markdown)).trim();
