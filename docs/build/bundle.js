@@ -4326,17 +4326,17 @@ var app = (function () {
     });
 
     // Database
-    const db = browser(['http://localhost:8765/gun', 'https://gun-manhattan.herokuapp.com/gun']);
+    const db = browser({ peers: ['http://localhost:8765/gun', 'https://gun-manhattan.herokuapp.com/gun'] });
 
     // Gun User
-    const user = db.user().recall({sessionStorage: true});
+    const user = db.user().recall({ sessionStorage: true });
 
     // Current User's username
     const username = writable('');
 
     user.get('alias').on(v => username.set(v));
 
-    db.on('auth', async(event) => {
+    db.on('auth', async (event) => {
         const alias = await user.get('alias'); // username string
         username.set(alias);
     });
@@ -10876,27 +10876,27 @@ var app = (function () {
     			t5 = space();
     			button1 = element("button");
     			t6 = text("Post");
-    			attr_dev(button0, "class", "draft-close svelte-zxoohl");
+    			attr_dev(button0, "class", "draft-close svelte-scsp0e");
     			add_location(button0, file$5, 35, 8, 1025);
-    			attr_dev(span, "class", "draft-title svelte-zxoohl");
+    			attr_dev(span, "class", "draft-title svelte-scsp0e");
     			add_location(span, file$5, 37, 12, 1154);
     			attr_dev(textarea, "type", "text");
     			attr_dev(textarea, "placeholder", "Write something...");
     			attr_dev(textarea, "maxlength", "3000");
-    			attr_dev(textarea, "class", "svelte-zxoohl");
+    			attr_dev(textarea, "class", "svelte-scsp0e");
     			add_location(textarea, file$5, 38, 12, 1217);
-    			attr_dev(button1, "class", "draft-submit svelte-zxoohl");
+    			attr_dev(button1, "class", "draft-submit svelte-scsp0e");
     			attr_dev(button1, "type", "submit");
     			button1.disabled = button1_disabled_value = !/*text*/ ctx[0].trim();
     			add_location(button1, file$5, 44, 12, 1398);
-    			attr_dev(form, "class", "svelte-zxoohl");
+    			attr_dev(form, "class", "svelte-scsp0e");
     			add_location(form, file$5, 36, 8, 1095);
-    			attr_dev(div0, "class", "modal-window svelte-zxoohl");
+    			attr_dev(div0, "class", "modal-window svelte-scsp0e");
     			add_location(div0, file$5, 34, 4, 990);
 
     			attr_dev(div1, "class", div1_class_value = "" + (null_to_empty(/*$draft_open*/ ctx[1]
     			? "modal fade-in"
-    			: "modal hidden") + " svelte-zxoohl"));
+    			: "modal hidden") + " svelte-scsp0e"));
 
     			add_location(div1, file$5, 33, 0, 925);
     		},
@@ -10938,7 +10938,7 @@ var app = (function () {
 
     			if (dirty & /*$draft_open*/ 2 && div1_class_value !== (div1_class_value = "" + (null_to_empty(/*$draft_open*/ ctx[1]
     			? "modal fade-in"
-    			: "modal hidden") + " svelte-zxoohl"))) {
+    			: "modal hidden") + " svelte-scsp0e"))) {
     				attr_dev(div1, "class", div1_class_value);
     			}
     		},
@@ -12054,7 +12054,8 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			span.textContent = `/${channel}`;
-    			add_location(span, file, 14, 4, 274);
+    			attr_dev(span, "class", "channel svelte-1vxmei3");
+    			add_location(span, file, 14, 4, 273);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -12096,11 +12097,11 @@ var app = (function () {
     			t2 = space();
     			button = element("button");
     			button.textContent = "Sign Out";
-    			add_location(strong, file, 19, 6, 358);
-    			attr_dev(div, "class", "user-bio svelte-1hql5t8");
-    			add_location(div, file, 18, 4, 329);
-    			attr_dev(button, "class", "signout-button svelte-1hql5t8");
-    			add_location(button, file, 22, 4, 404);
+    			add_location(strong, file, 19, 6, 373);
+    			attr_dev(div, "class", "user-bio svelte-1vxmei3");
+    			add_location(div, file, 18, 4, 344);
+    			attr_dev(button, "class", "signout-button svelte-1vxmei3");
+    			add_location(button, file, 22, 4, 419);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -12153,17 +12154,17 @@ var app = (function () {
     			header = element("header");
     			a = element("a");
     			h1 = element("h1");
-    			h1.textContent = "DXEXIT";
+    			h1.textContent = "forus";
     			t1 = space();
     			if (if_block0) if_block0.c();
     			t2 = space();
     			if (if_block1) if_block1.c();
-    			attr_dev(h1, "class", "svelte-1hql5t8");
+    			attr_dev(h1, "class", "svelte-1vxmei3");
     			add_location(h1, file, 11, 15, 218);
     			attr_dev(a, "href", "./");
-    			attr_dev(a, "class", "svelte-1hql5t8");
+    			attr_dev(a, "class", "svelte-1vxmei3");
     			add_location(a, file, 11, 2, 205);
-    			attr_dev(header, "class", "svelte-1hql5t8");
+    			attr_dev(header, "class", "svelte-1vxmei3");
     			add_location(header, file, 10, 0, 194);
     		},
     		l: function claim(nodes) {

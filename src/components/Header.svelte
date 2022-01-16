@@ -9,7 +9,7 @@
 </script>
 
 <header>
-  <a href="./"><h1>DXEXIT</h1></a>
+  <a href="./"><h1>forus</h1></a>
 
   {#if get_and_load_channel()}
     <span class="channel">/{channel}</span>
